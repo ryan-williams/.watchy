@@ -31,6 +31,6 @@ jobs:
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
-          git commit -m "Update data $(date -u +%Y-%m-%d)"
+          git commit -m "GHA update"
           git push
         fi
