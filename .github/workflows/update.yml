@@ -21,8 +21,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WATCHY_DIR: .  # Write to current directory instead of .watchy
       run: |
-        watchy stars runsascoded ryan-williams hudcostreets bikejc embankmentjc neighbor-ryan
-        watchy follows runsascoded ryan-williams hudcostreets bikejc embankmentjc neighbor-ryan
+        watchy stars runsascoded
+        watchy follows runsascoded
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
