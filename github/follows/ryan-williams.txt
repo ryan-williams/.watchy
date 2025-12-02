@@ -163,6 +163,5 @@ localartaction
 EduardoDosSantosFerreira
 devopspass
 nicoletaMS
-wachawo
 BustosCyberLabs
 LinuxJS
