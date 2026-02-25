@@ -166,5 +166,3 @@ nicoletaMS
 BustosCyberLabs
 LinuxJS
 crisprking
-offsecgit3
-offsecgit4
