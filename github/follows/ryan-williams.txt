@@ -166,6 +166,5 @@ EduardoDosSantosFerreira
 devopspass
 nicoletaMS
 BustosCyberLabs
-yowls
 LinuxJS
 crisprking
