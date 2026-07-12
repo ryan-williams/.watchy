@@ -18,10 +18,13 @@ jobs:
     - run: pip install watchy==0.0.7
     - name: Collect data
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # PAT (not the Actions token): as of 2026-06-30, /repos/{owner}/{repo}/stargazers
+        # is restricted to admins/collaborators, and the per-run GITHUB_TOKEN qualifies
+        # for no repo but this one. https://github.blog/changelog/2026-06-30-upcoming-access-restrictions-to-public-api-endpoints-and-ui-views/
+        GITHUB_TOKEN: ${{ secrets.WATCHY_TOKEN }}
         WATCHY_DIR: .  # Write to current directory instead of .watchy
       run: |
-        watchy stars runsascoded ryan-williams hudcostreets bikejc embankmentjc neighbor-ryan Open-Athena TileDB-Inc/TileDB-SOMA-ML
+        watchy stars runsascoded ryan-williams hudcostreets bikejc embankmentjc neighbor-ryan Open-Athena
         watchy follows runsascoded ryan-williams hudcostreets bikejc embankmentjc neighbor-ryan Open-Athena
     - name: Commit and push changes
       run: |
