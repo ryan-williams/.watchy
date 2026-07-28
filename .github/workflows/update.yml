@@ -1,7 +1,8 @@
 name: Update GitHub Data
+# Decommissioned 2026-07-28: superseded by the D1-backed Cloudflare Worker
+# (https://github.com/runsascoded/watchy, cfw/). Manual dispatch still works,
+# but requires the WATCHY_TOKEN secret (deleted at decommission) to be re-set.
 on:
-  schedule:
-    - cron: '0 8 * * *'
   workflow_dispatch:
 permissions:
   contents: write
